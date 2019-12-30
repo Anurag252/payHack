@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+       
+        <script>
+        function showSuccess()
+        {
+            
+            document.getElementById("processing").hidden = true;
+            document.getElementById("success").hidden = false;
+            document.getElementById("successMessage").hidden = false;
+        }   
+        setTimeout(()=> showSuccess(),2000); 
+        setTimeout(()=> {window.open('', '_self', ''); window.close();},5000); 
+        </script>
+    </head>
+    <body>
+        <div style="background-color: antiquewhite;position: relative;top: 5em;left: 10em;border-radius: 1em;width: 50em;height: 5em;">
+           <div style="padding-top: 0.5em;padding-left: 0.5em;">
+            <h4 id="processing">Processing Order</h4>
+            <h4 id="success" style="color: green;" hidden>Transaction successful</h4>
+            <p id="successMessage" hidden style="color: green;">Transferred 1000/- INR to github user Michael267  </p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        
+    </body>
+</html>
